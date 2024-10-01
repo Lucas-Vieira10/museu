@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas Pop Antigas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+         <button class="quizziz" onclick="quiz('quiz')">quiz</button>
+        <h1>Músicas Pop 🤘</h1>
+       
+    </nav>
+    <main>
+        <section class="gallery">
+            <div class="band" onclick="showPopup('mamonas')">
+                <img src="mamonas.jpg" alt="Mamonas Assassinas">
+                <h2>Mamonas Assassinas</h2>
+                <p>Com muito humor e espontaneidade os mamonas levaram alegria para os corações de muitos.</p>
+            </div>
+            <div class="band" onclick="showPopup('nirvana')">
+                <img src="nirvana.jpeg" alt="Nirvana">
+                <h2>Nirvana</h2>
+                <p>O som que definiu uma geração.</p>
+            </div>
+            <div class="band" onclick="showPopup('redhot')">
+                <img src="redhot.jpg" alt="Red Hot Chili Peppers">
+                <h2>Red Hot Chili Peppers</h2>
+                <p>rock que nunca sai de moda.</p>
+            </div>
+            <div class="band" onclick="showPopup('cbjr')">
+                <img src="cbjr.jpg" alt="CBJR">
+                <h2>CBJR</h2>
+                <p>O som do rock nacional nos anos 2000, </p>
+            </div>
+            <div class="band" onclick="showPopup('cbjr')">
+                <img src="legiao.jpg" alt="legiao">
+                <h2>legião urbana</h2>
+                <p>os maconheiros contra atacam .</p>
+            </div>
+            <div class="band" onclick="showPopup('sidney')">
+                <img src="sidney.jpeg" alt="sidney">
+                <h2>sidney magal</h2>
+                <p>o pançudo das miusiquis.</p>
+            </div>
+        </section>
+        <div id="quiz-popup" class="popup">
+            <div class="popup-content">
+                <h3>Quiz: quem era vocalista dos mamonas assassinas?</h3>
+                <button onclick="checkAnswer('certo')">dinho</button>
+                <button onclick="checkAnswer('errado')">bento</button>
+                <button onclick="checkAnswer('errado')">marcelo</button>
+                <button onclick="closePopup()"><a href="index.html">fechar</a></button>
+                
+            </div>
+        
+        </div>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+    <button class="quizziz" onclick="sair('sair')">Sair</button>
+    <script src="script.js"></script>
+</body>
+</html>
